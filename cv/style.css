@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #212529;
+    line-height: 1.5;
+    padding: 3rem 1rem;
+}
+
+.container {
+    max-width: 1160px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
+}
+
+.cv-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.photo-container {
+    flex: 0 0 33.333%;
+    text-align: center;
+}
+
+.profile-img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 0.25rem;
+}
+
+.header-info {
+    flex: 1;
+}
+
+#cv-name {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.5rem;
+    line-height: 1.2;
+    white-space: pre-line;
+}
+
+.divider {
+    height: 5px;
+    background-color: #222;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.875rem;
+    text-decoration: none;
+    color: #212529;
+}
+
+.contact-item img { width: 20px; }
+
+.profile-section { margin-bottom: 2rem; }
+.profile-section h3 { margin-bottom: 1rem; }
+.profile-section p { text-align: justify; }
+
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.left-column, .right-column {
+    flex: 1;
+    min-width: 300px;
+}
+
+h3 {
+    margin-bottom: 1rem;
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+}
+h3:first-child { margin-top: 0; }
+
+.item-block { margin-bottom: 1.5rem; }
+.item-period { font-size: 0.9rem; }
+.item-title { font-weight: bold; }
+
+.custom-list, .item-block ul {
+    margin-left: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+.footer-bar {
+    height: 40px;
+    background-color: #222;
+    margin-top: 3rem;
+}
