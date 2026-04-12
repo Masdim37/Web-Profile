@@ -15,7 +15,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="/">Dhimas Hafizh</span></a>
+            <a class="navbar-brand" href="#">MDHF <span class="text-muted fw-normal">Dhimas Hafizh</span></a>
             <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <i class="bi bi-list fs-2"></i>
             </button>
