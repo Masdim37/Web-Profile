@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+!<!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
@@ -28,8 +28,8 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto gap-3 text-center">
-                     <li class="nav-item"><a class="nav-link fw-bold" href="/">Home</a></li>
-                    <li class="nav-item"><a class="nav-link fw-semibold" href="/aboutme">About Me</a></li>
+                    <li class="nav-item"><a class="nav-link fw-semibold" href="/">Home</a></li>
+                    <li class="nav-item"><a class="nav-link fw-bold" href="/aboutme">About Me</a></li>
                     <li class="nav-item"><a class="nav-link fw-semibold" href="/experience">Experience</a></li>
                     <li class="nav-item"><a class="nav-link fw-semibold" href="/project">Project</a></li>
                     <li class="nav-item"><a class="nav-link fw-semibold" href="/contact">Contact Me</a></li>
@@ -43,32 +43,34 @@
         </div>
     </nav>
 
-    <section id="home" class="d-flex align-items-center" style="min-height: 90vh;">
-        <div class="container">
-            <div class="row align-items-center flex-column-reverse flex-md-row text-center text-md-start">
-                <div class="col-md-7">
-                    <p class="mb-2 fw-bold text-muted">Web Developer & Tech Enthusiast</p>
-                    <h1 class="hero-title mb-4">Hello! I'm</h1>
-                    <h1 class="hero-title mb-4">Muhammad Dhimas Hafizh Fathurrahman</h1>
-                    <p class="lead text-secondary mb-4">Selamat Datang di Website Profile Saya</p>
-                    <div class="d-flex gap-2 justify-content-center justify-content-md-start">
-                        <a href="#experience" class="btn btn-dark rounded-pill px-4">My Experience</a>
-                        <a href="#project" class="btn btn-dark rounded-pill px-4">My Project</a>
-                        <a href="mailto:dhimas.hfzh375@gmail.com" class="btn btn-outline-dark rounded-pill px-4">Contact Me</a>
-                    </div>
+    <section id="about" class="container">
+        <h2 class="fw-bold mb-4">About Me</h2>
+        <div class="terminal-window">
+            <div class="terminal-header">
+                <div class="terminal-buttons">
+                    <span class="btn-red"></span>
+                    <span class="btn-yellow"></span>
+                    <span class="btn-green"></span>
                 </div>
-                <div class="col-md-5 text-center mb-5 mb-md-0">
-                    <img src="{{ asset('asset/foto.png') }}" class="rounded-circle shadow-lg border border-5 border-white" style="width: 280px; height: 280px; object-fit: cover;">
-                </div>
+                <div class="ms-3" style="font-size: 0.8rem; color: #999;">bash - dhimas@dev</div>
+            </div>
+            <div class="terminal-body">
+                <div><span class="prompt-text">root@dhimas:~/tentang_saya $</span> <span class="command-text">./tentang</span></div>
+                <br>
+                <div>Halo 👋, saya <strong>Muhammad Dhimas Hafizh Fathurrahman</strong>.</div>
+                <br>
+                <div>Saya mempelajari teknologi bukan sekadar untuk membuat sistem berjalan, tetapi untuk memahami bagaimana arsitektur data dan jaringan bekerja.</div>
+                <br>
+                <div>Ketertarikan saya pada <strong>Backend Development, Big Data, dan Machine Learning</strong> berangkat dari rasa ingin tahu yang sederhana, yang perlahan berkembang menjadi keinginan untuk membangun infrastruktur yang kuat dan efisien.</div>
+                <br>
+                <div>Saat ini saya sedang menempuh studi S1 Teknik Informatika dengan IPK 3.96/4.00, serta memiliki sertifikasi <em>Microsoft Azure AI Fundamentals</em>. Bagi saya, setiap project (seperti menjadi Asisten Praktikum atau IT Support) adalah proses belajar tentang logika, solusi, dan kolaborasi tim.</div>
+                <br>
+                <div style="color: #61dafb;">> Always learning, always building.</div>
+                <br>
+                <div><span class="prompt-text">root@dhimas:~/tentang_saya $</span> <span class="command-text cursor-blink">_</span></div>
             </div>
         </div>
     </section>
-
-    @include('about')
-
-    @include('experience')
-
-    @include('project')
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>

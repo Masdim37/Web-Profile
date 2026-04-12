@@ -36,7 +36,8 @@ $cvData = [
     "experience" => [
         [
             "period" => "Januari - Maret 2022",
-            "title" => "Junior IT Support | PT Pralon Karawang",
+            "title" => "Junior IT Support",
+            "institution" => "PT Pralon Karawang",
             "responsibilities" => [
                 "Mengelola dan memelihara jaringan komputer perusahaan, termasuk monitoring, konfigurasi, dan troubleshooting LAN/WAN untuk memastikan konektivitas stabil dan aman.",
                 "Memberikan dukungan teknis melalui diagnosis dan perbaikan perangkat keras serta perangkat lunak yang bermasalah, guna mendukung kelancaran operasional harian perusahaan.",
