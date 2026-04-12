@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Memulai request AJAX ke backend PHP
+    // Memulai request AJAX ke backend PHP (menggunakan fetch())
     fetch('data.php')
         .then(response => {
             if (!response.ok) {
