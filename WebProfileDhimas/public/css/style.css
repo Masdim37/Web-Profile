@@ -160,31 +160,6 @@ footer {
 }
 .blink { animation: blink 1s infinite; }
 
-/* Styling Exp Toggle */
-.exp-toggle {
-    border: 1px solid #eee;
-    transition: all 0.3s ease;
-    border-radius: 12px;
-}
-.exp-toggle:hover {
-    background-color: #f8f9fa !important;
-}
-.exp-toggle:not(.collapsed) {
-    border-color: #000;
-}
-.exp-toggle i.bi-plus-lg {
-    transition: transform 0.3s ease;
-}
-.exp-toggle:not(.collapsed) i.bi-plus-lg {
-    transform: rotate(45deg); /* Berubah jadi icon 'X' */
-}
-
-/* Scroll Offset for Navbar */
-:target {
-    scroll-margin-top: 100px;
-}
-
-
 
 /* --- Styling Experience Cards --- */
 .experience-card {

@@ -29,7 +29,7 @@
                     <li class="nav-item"><a class="nav-link fw-semibold" href="/aboutme">About Me</a></li>
                     <li class="nav-item"><a class="nav-link fw-semibold" href="/experience">Experience</a></li>
                     <li class="nav-item"><a class="nav-link fw-semibold" href="/project">Project</a></li>
-                    <li class="nav-item"><a class="nav-link fw-bold active" href="/contact">Contact Me</a></li>
+                    <li class="nav-item"><a class="nav-link fw-bold" href="/contact">Contact Me</a></li>
                 </ul>
             </div>
         </div>
