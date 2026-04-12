@@ -11,12 +11,7 @@
     
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     
-    <style>
-        body { font-family: 'Inter', sans-serif; background-color: #fafafa; scroll-behavior: smooth; }
-        .navbar-custom { background-color: rgba(255, 255, 255, 0.8); backdrop-filter: blur(10px); border-bottom: 1px solid #eaeaea; }
-        .hero-title { font-size: clamp(2.5rem, 8vw, 4rem); font-weight: 800; letter-spacing: -2px; line-height: 1; }
-        section { padding: 100px 0; }
-    </style>
+
 </head>
 <body data-bs-spy="scroll" data-bs-target="#navbarNav">
 

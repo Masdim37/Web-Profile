@@ -53,6 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <div class="item-block">
                         <div class="item-period">${exp.period}</div>
                         <div class="item-title">${exp.title}</div>
+                        ${exp.institution}
                         <ul>${responsibilities}</ul>
                     </div>
                 `;
@@ -68,7 +69,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <div class="item-block">
                         <div class="item-period">${org.period}</div>
                         <div class="item-title">${org.title}</div>
-                        ${institution}
+                        ${org.institution}
                         <ul>${responsibilities}</ul>
                     </div>
                 `;
