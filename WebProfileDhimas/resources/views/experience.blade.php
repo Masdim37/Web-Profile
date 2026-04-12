@@ -22,7 +22,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="#">MDHF</a>
+            <a class="navbar-brand fw-bold" href="/">MDHF</a>
             <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <i class="bi bi-list fs-2"></i>
             </button>
@@ -33,18 +33,13 @@
                     <li class="nav-item"><a class="nav-link fw-bold" href="/experience">Experience</a></li>
                     <li class="nav-item"><a class="nav-link fw-semibold" href="/project">Project</a></li>
                     <li class="nav-item"><a class="nav-link fw-semibold" href="/contact">Contact Me</a></li>
-                    <li class="nav-item">
-                        <a class="nav-link fw-semibold" href="https://github.com/Masdim37" target="_blank">
-                            <i class="bi bi-github"></i> GitHub
-                        </a>
-                    </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <section id="experience" class="py-5">
-    <div class="container py-5">
+    <section id="experience" class="py-3">
+    <div class="container">
         <h2 class="fw-bold mb-5 text-center">Experiences</h2>
         
         <div class="d-flex align-items-center gap-2 mb-4">

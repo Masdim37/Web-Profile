@@ -11,5 +11,5 @@ Route::get('/', [ProfileController::class, 'index']);
 Route::get('/aboutme', [ProfileController::class, 'about']);
 Route::get('/experience', [ProfileController::class, 'experience']);
 Route::get('/project', [ProfileController::class, 'project']);
-Route::get('/contactme', [ProfileController::class, 'contact']);
+Route::get('/contact', [ProfileController::class, 'contact']);
 Route::get('/cv', [ProfileController::class, 'cv']);

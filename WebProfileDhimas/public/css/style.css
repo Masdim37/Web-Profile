@@ -8,7 +8,6 @@ body {
 /* Navbar dengan efek Blur (Kaca) ala Vercel */
 .navbar-custom {
     background-color: rgba(255, 255, 255, 0.8);
-    backdrop-filter: blur(10px);
     border-bottom: 1px solid #eaeaea;
 }
 
@@ -19,8 +18,7 @@ body {
 
 .nav-link {
     font-weight: 500;
-    color: #555;
-    transition: 0.3s;
+    color: #111;
 }
 
 .nav-link:hover {
@@ -29,8 +27,8 @@ body {
 
 /* Hero Section */
 .hero-title {
-    font-size: 3.5rem;
-    font-weight: 800;
+    font-size: 2.7rem;
+    font-weight: 700;
     letter-spacing: -1px;
 }
 

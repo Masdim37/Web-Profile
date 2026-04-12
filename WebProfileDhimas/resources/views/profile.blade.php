@@ -22,7 +22,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="#">MDHF</a>
+            <a class="navbar-brand fw-bold" href="/">MDHF</a>
             <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <i class="bi bi-list fs-2"></i>
             </button>
@@ -33,11 +33,6 @@
                     <li class="nav-item"><a class="nav-link fw-semibold" href="/experience">Experience</a></li>
                     <li class="nav-item"><a class="nav-link fw-semibold" href="/project">Project</a></li>
                     <li class="nav-item"><a class="nav-link fw-semibold" href="/contact">Contact Me</a></li>
-                    <li class="nav-item">
-                        <a class="nav-link fw-semibold" href="https://github.com/Masdim37" target="_blank">
-                            <i class="bi bi-github"></i> GitHub
-                        </a>
-                    </li>
                 </ul>
             </div>
         </div>
@@ -46,19 +41,18 @@
     <section id="home" class="d-flex align-items-center" style="min-height: 90vh;">
         <div class="container">
             <div class="row align-items-center flex-column-reverse flex-md-row text-center text-md-start">
-                <div class="col-md-7">
-                    <p class="mb-2 fw-bold text-muted">Web Developer & Tech Enthusiast</p>
-                    <h1 class="hero-title mb-4">Hello! I'm</h1>
+                <div class="col-md-8">
+                    <h1 class="hero-title mb-4">Halo! Saya</h1>
                     <h1 class="hero-title mb-4">Muhammad Dhimas Hafizh Fathurrahman</h1>
-                    <p class="lead text-secondary mb-4">Selamat Datang di Website Profile Saya</p>
+                    <p class="lead text-secondary mb-4">Mahasiswa S1 Teknik Informatika di Telkom University Purwokerto dengan minat pada pengembangan backend, big data, dan machine learning, serta memiliki dasar yang kuat di bidang jaringan komputer. Berpengalaman sebagai Asisten Laboratorium dan Sekretaris Divisi TI Sircle RnD, dengan kemampuan dalam Python, Golang, dan Java untuk mengembangkan solusi sistem yang efisien dan skalabel.</p>
                     <div class="d-flex gap-2 justify-content-center justify-content-md-start">
-                        <a href="#experience" class="btn btn-dark rounded-pill px-4">My Experience</a>
-                        <a href="#project" class="btn btn-dark rounded-pill px-4">My Project</a>
-                        <a href="mailto:dhimas.hfzh375@gmail.com" class="btn btn-outline-dark rounded-pill px-4">Contact Me</a>
+                        <a href="/experience" class="btn btn-dark rounded-pill px-4">My Experience</a>
+                        <a href="/project" class="btn btn-dark rounded-pill px-4">My Project</a>
+                        <a href="/contact" class="btn btn-outline-dark rounded-pill px-4">Contact Me</a>
                     </div>
                 </div>
-                <div class="col-md-5 text-center mb-5 mb-md-0">
-                    <img src="{{ asset('asset/foto.png') }}" class="rounded-circle shadow-lg border border-5 border-white" style="width: 280px; height: 280px; object-fit: cover;">
+                <div class="col-md-4 text-center mb-5 mb-md-0">
+                    <img src="{{ asset('asset/foto.png') }}" class="rounded-circle shadow-lg border border-5 border-black" style="width: 300px; height: 300px; object-fit: cover;">
                 </div>
             </div>
         </div>
@@ -69,6 +63,8 @@
     @include('experience')
 
     @include('project')
+
+    @include('contact')
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>

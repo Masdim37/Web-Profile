@@ -33,18 +33,13 @@
                     <li class="nav-item"><a class="nav-link fw-semibold" href="/experience">Experience</a></li>
                     <li class="nav-item"><a class="nav-link fw-bold" href="/project">Project</a></li>
                     <li class="nav-item"><a class="nav-link fw-semibold" href="/contact">Contact Me</a></li>
-                    <li class="nav-item">
-                        <a class="nav-link fw-semibold" href="https://github.com/Masdim37" target="_blank">
-                            <i class="bi bi-github"></i> GitHub
-                        </a>
-                    </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <section id="Project" class="py-5">
-    <div class="container py-5">
+    <section id="Project" class="py-3">
+    <div class="container">
         <h2 class="fw-bold mb-5 text-center">Project</h2>
 
         <div class="row g-4 mb-5">
