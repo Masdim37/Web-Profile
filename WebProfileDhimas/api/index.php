@@ -15,8 +15,8 @@ $vercelPaths = [
     'DB_DATABASE' => ':memory:',
     
     // TAMBAHAN BARU:
-    'APP_ENV' => 'local',
-    'APP_DEBUG' => 'true', // Memaksa pesan error asli muncul
+    'APP_ENV' => 'production',
+    'APP_DEBUG' => 'false', // Memaksa pesan error asli muncul
     'APP_KEY' => 'base64:9x9T9zNNVc6AQA4f2QDJO8Xn+4N5qw/XhP6V6Iw6v0I=' // Kunci rahasia dummy agar Laravel tidak crash
 ];
 
@@ -25,6 +25,9 @@ foreach ($vercelPaths as $key => $value) {
     $_SERVER[$key] = $value;
     putenv("{$key}={$value}");
 }
+
+// PAKSA LARAVEL MENGGUNAKAN HTTPS (SANGAT PENTING UNTUK MEMUAT CSS/GAMBAR)
+$_SERVER['HTTPS'] = 'on';
 
 // 2. Panggil index.php bawaan Laravel
 require __DIR__ . '/../public/index.php';
