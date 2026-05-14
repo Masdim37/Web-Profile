@@ -134,27 +134,24 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
     <script>
-        document.getElementById("contactForm").addEventListener("submit", function (e) {
-            e.preventDefault();
+    document.getElementById("contactForm").addEventListener("submit", function (e) {
+        e.preventDefault(); // Mencegah form melakukan refresh halaman
 
-            // ambil data input
-            let name = document.getElementById("name").value;
-            let message = document.getElementById("message").value;
+        // Ambil data input
+        let name = document.getElementById("name").value;
+        let message = document.getElementById("message").value;
 
-            // format pesan
-            let text = encodeURIComponent(
-                `Halo, saya ${name}
-${message}`
-            );
+        // Format pesan
+        let text = encodeURIComponent(`Halo, saya ${name}\n${message}`);
 
-            // nomor WA (pakai format 62)
-            let phone = "6281290071606";
+        // Nomor WA (pakai format 62)
+        let phone = "6281290071606";
 
-            // redirect ke WhatsApp
-            let url = `https://wa.me/${phone}?text=${text}`;
-            window.open(url, "_blank");
-        });
-    </script>
+        // Redirect ke WhatsApp (Gunakan window.location.href agar tidak diblokir browser)
+        let url = `https://wa.me/${phone}?text=${text}`;
+        window.location.href = url; 
+    });
+</script>
 </body>
 
 </html>
