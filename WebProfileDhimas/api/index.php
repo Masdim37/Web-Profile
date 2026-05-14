@@ -1,6 +1,6 @@
 <?php
 
-// 1. SUNTIK PAKSA PENGATURAN VERCEL (SERVERLESS)
+// 1. SUNTIK PAKSA PENGATURAN VERCEL TERMASUK APP_KEY & DEBUG
 $vercelPaths = [
     'APP_CONFIG_CACHE' => '/tmp/config.php',
     'APP_EVENTS_CACHE' => '/tmp/events.php',
@@ -12,7 +12,12 @@ $vercelPaths = [
     'LOG_CHANNEL' => 'stderr',
     'CACHE_STORE' => 'array',
     'DB_CONNECTION' => 'sqlite',
-    'DB_DATABASE' => ':memory:'
+    'DB_DATABASE' => ':memory:',
+    
+    // TAMBAHAN BARU:
+    'APP_ENV' => 'local',
+    'APP_DEBUG' => 'true', // Memaksa pesan error asli muncul
+    'APP_KEY' => 'base64:9x9T9zNNVc6AQA4f2QDJO8Xn+4N5qw/XhP6V6Iw6v0I=' // Kunci rahasia dummy agar Laravel tidak crash
 ];
 
 foreach ($vercelPaths as $key => $value) {
