@@ -69,25 +69,6 @@
     </div>
 </section>
 
-<style>
-    .experience-card {
-        transition: all 0.3s ease;
-        border-radius: 20px;
-        cursor: pointer;
-    }
-    .experience-card:hover {
-        transform: translateY(-10px);
-        border-color: #000;
-        box-shadow: 0 15px 30px rgba(0,0,0,0.1) !important;
-    }
-    .experience-card i {
-        transition: transform 0.3s ease;
-    }
-    .experience-card:hover i {
-        transform: scale(1.1);
-    }
-</style>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

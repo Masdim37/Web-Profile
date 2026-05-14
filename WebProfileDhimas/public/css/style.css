@@ -5,7 +5,6 @@ body {
     padding-top: 80px;
 }
 
-/* Navbar dengan efek Blur (Kaca) ala Vercel */
 .navbar-custom {
     background-color: rgba(255, 255, 255, 0.8);
     border-bottom: 1px solid #eaeaea;
@@ -25,7 +24,6 @@ body {
     color: #000;
 }
 
-/* Hero Section */
 .hero-title {
     font-size: 2.7rem;
     font-weight: 700;
@@ -65,7 +63,6 @@ body {
     background-color: #f1f5f9;
 }
 
-/* Terminal Window Style (Persis seperti referensi) */
 .terminal-window {
     background-color: #1e1e1e;
     border-radius: 10px;
@@ -117,19 +114,16 @@ body {
     color: #f1f1f1;
 }
 
-/* Horizontal Scroll untuk Portofolio */
 .horizontal-scroll {
     display: flex;
     overflow-x: auto;
     gap: 20px;
     padding-bottom: 20px;
     scrollbar-width: none;
-    /* Firefox */
 }
 
 .horizontal-scroll::-webkit-scrollbar {
     display: none;
-    /* Chrome */
 }
 
 .card-porto {
@@ -152,32 +146,35 @@ footer {
     color: #666;
 }
 
-
-/* Blink animation for terminal cursor */
 @keyframes blink { 
     0%, 100% { opacity: 1; } 
     50% { opacity: 0; } 
 }
 .blink { animation: blink 1s infinite; }
 
-
-/* --- Styling Experience Cards --- */
 .experience-card {
     background-color: #ffffff;
     border: 1px solid #eaeaea;
-    border-radius: 16px;
+    border-radius: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
-    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition: all 0.3s ease;
+    cursor: pointer;
 }
 
-/* Efek Hover: Kartu Terangkat dan Bayangan Menebal */
+.experience-card i {
+    transition: transform 0.3s ease;
+}
+
+.experience-card:hover i {
+    transform: scale(1.1);
+}
+
 .experience-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
-    border-color: #d1d5db;
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08) !important;
+    border-color: #000;
 }
 
-/* Kotak Ikon di dalam Kartu */
 .experience-card .icon-box {
     width: 48px;
     height: 48px;
