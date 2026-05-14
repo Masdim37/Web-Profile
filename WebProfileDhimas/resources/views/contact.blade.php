@@ -20,7 +20,8 @@
     <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
         <div class="container">
             <a class="navbar-brand fw-bold" href="/">MDHF</a>
-            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav">
                 <i class="bi bi-list fs-2"></i>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -42,7 +43,8 @@
                     <div class="text-center mb-5">
                         <h2 class="fw-bold" style="font-size: 2.5rem; letter-spacing: -1px;">Contact Me!</h2>
                         <p class="text-secondary mt-3">Anda memiliki pertanyaan, ide proyek, atau ingin kolaborasi?</p>
-                        <p class="text-secondary">Jangan ragu untuk menghubungi saya melalui formulir di bawah ini atau kontak langsung.</p>
+                        <p class="text-secondary">Jangan ragu untuk menghubungi saya melalui formulir di bawah ini atau
+                            kontak langsung.</p>
                     </div>
 
                     <div class="row g-4">
@@ -114,8 +116,7 @@
                                     <div class="mb-4">
                                         <label for="message"
                                             class="form-label fw-semibold text-muted small">Pesan</label>
-                                        <textarea name="message" id="message"
-                                            class="form-control bg-light border-0 py-2 px-3 rounded-3" rows="5"
+                                        <textarea name="message" id="message" class="form-control bg-light border-0 py-2 px-3 rounded-3" rows="5"
                                             placeholder="Tulis pesan..." required></textarea>
                                     </div>
                                     <button type="submit" class="btn btn-dark w-100 rounded-pill py-2 fw-bold"
@@ -134,24 +135,24 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
     <script>
-    document.getElementById("contactForm").addEventListener("submit", function (e) {
-        e.preventDefault(); // Mencegah form melakukan refresh halaman
+        document.getElementById("contactForm").addEventListener("submit", function(e) {
+            e.preventDefault(); // Mencegah form melakukan refresh halaman
 
-        // Ambil data input
-        let name = document.getElementById("name").value;
-        let message = document.getElementById("message").value;
+            // Ambil data input
+            let name = document.getElementById("name").value;
+            let message = document.getElementById("message").value;
 
-        // Format pesan
-        let text = encodeURIComponent(`Halo, saya ${name}\n${message}`);
+            // Format pesan
+            let text = encodeURIComponent(`Halo, saya ${name}\n${message}`);
 
-        // Nomor WA (pakai format 62)
-        let phone = "6281290071606";
+            // Nomor WA (pakai format 62)
+            let phone = "6281290071606";
 
-        // Redirect ke WhatsApp (Gunakan window.location.href agar tidak diblokir browser)
-        let url = `https://wa.me/${phone}?text=${text}`;
-        window.location.href = url; 
-    });
-</script>
+            // Redirect ke WhatsApp (Gunakan window.location.href agar tidak diblokir browser)
+            let url = `https://wa.me/${phone}?text=${text}`;
+            window.open(url, '_blank').focus();
+        });
+    </script>
 </body>
 
 </html>
